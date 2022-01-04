@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Driver;
+using URF.Core.Abstractions;
+using URF.Core.Mongo;
 
 namespace EventDriven.DependencyInjection.URF.Mongo
 {
@@ -20,6 +22,7 @@ namespace EventDriven.DependencyInjection.URF.Mongo
         public static IServiceCollection AddMongoDbSettings<TAppSettings, TEntity>(
             this IServiceCollection services, IConfiguration config)
             where TAppSettings : class, IMongoDbSettings
+            where TEntity : class
         {
             services.AddAppSettings<TAppSettings>(config);
             services.AddSingleton(sp =>
@@ -29,6 +32,7 @@ namespace EventDriven.DependencyInjection.URF.Mongo
                 var database = client.GetDatabase(settings.DatabaseName);
                 return database.GetCollection<TEntity>(settings.CollectionName);
             });
+            services.AddSingleton<IDocumentRepository<TEntity>, DocumentRepository<TEntity>>();
             return services;
         }
     }

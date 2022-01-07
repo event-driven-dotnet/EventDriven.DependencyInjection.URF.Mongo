@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Tony Sneed</Authors>
     <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
-    <PackageVersion>1.0.0-beta2</PackageVersion>
+    <PackageVersion>1.1.0-beta1</PackageVersion>
     <Description>Helper methods for configuring services for MongoDB with dependency injection.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/event-driven-dotnet/EventDriven.DependencyInjection.URF.Mongo</PackageProjectUrl>
@@ -15,7 +15,7 @@
     <RepositoryUrl>https://github.com/event-driven-dotnet/EventDriven.DependencyInjection.URF.Mongo.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>dependency-injection urf mongodb event-driven event-driven-architecture</PackageTags>
-    <PackageReleaseNotes>https://github.com/event-driven-dotnet/EventDriven.DependencyInjection.URF.Mongo/releases/tag/v1.0.0-beta2</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/event-driven-dotnet/EventDriven.DependencyInjection.URF.Mongo/releases/tag/v1.1.0-beta1</PackageReleaseNotes>
     <PackageId>EventDriven.DependencyInjection.URF.Mongo</PackageId>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>

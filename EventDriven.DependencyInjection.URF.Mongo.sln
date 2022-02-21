@@ -10,6 +10,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventDriven.DependencyInjection.URF.Mongo", "src\EventDriven.DependencyInjection.URF.Mongo\EventDriven.DependencyInjection.URF.Mongo.csproj", "{7F612AFE-9522-4050-BD96-0944122DE9C0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{724B683D-15D8-409C-8F7B-3ED3702A992F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{D3D1D434-D490-47F2-8AFA-17A29F620DEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDbSettingsSample", "sample\MongoDbSettingsSample\MongoDbSettingsSample.csproj", "{0908E04D-6C96-4784-8F92-7EFDED83D5E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,11 +26,19 @@ Global
 		{7F612AFE-9522-4050-BD96-0944122DE9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F612AFE-9522-4050-BD96-0944122DE9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F612AFE-9522-4050-BD96-0944122DE9C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0908E04D-6C96-4784-8F92-7EFDED83D5E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0908E04D-6C96-4784-8F92-7EFDED83D5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0908E04D-6C96-4784-8F92-7EFDED83D5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0908E04D-6C96-4784-8F92-7EFDED83D5E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7DB0D78A-64DB-4A4E-A9AD-EF4C1B3CDA30}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F612AFE-9522-4050-BD96-0944122DE9C0} = {724B683D-15D8-409C-8F7B-3ED3702A992F}
+		{0908E04D-6C96-4784-8F92-7EFDED83D5E3} = {D3D1D434-D490-47F2-8AFA-17A29F620DEE}
 	EndGlobalSection
 EndGlobal
